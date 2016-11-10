@@ -3,16 +3,18 @@
 import os
 import shutil
 
-shutil.move("C:/Users/Student/Desktop/FolderA/file1.txt", "C:/Users/Student/Desktop/FolderB/file1.txt")
-shutil.move("C:/Users/Student/Desktop/FolderA/file2.txt", "C:/Users/Student/Desktop/FolderB/file2.txt")
-shutil.move("C:/Users/Student/Desktop/FolderA/file3.txt", "C:/Users/Student/Desktop/FolderB/file3.txt")
-shutil.move("C:/Users/Student/Desktop/FolderA/file4.txt", "C:/Users/Student/Desktop/FolderB/file4.txt")
+source = "C:/Users/Student/Desktop/FolderA"
+destination = "C:/Users/Student/Desktop/FolderB"
+files = os.listdir(source)
+filenames = os.listdir(destination)
 
-directory = "C:/Users/Student/Desktop/FolderB"
-filenames = os.listdir(directory)
+# move the .txt files from Folder A to Folder B
+for f in files:
+    if f.endswith('.txt'):
+        shutil.move(source + "/" + f, destination + "/" + f)
 
-for f in filenames:
-    print directory + "/" + f
-
+# print out the file paths after the files were moved
+for n in filenames:
+    print destination + "/" + n
 
 
