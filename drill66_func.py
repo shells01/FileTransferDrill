@@ -84,7 +84,7 @@ def first_run(self):
     conn = sqlite3.connect('db_filecheck.db')
     with conn:
         cur = conn.cursor()
-        count = count_records(cur)
+        #count = count_records(cur)
         cur, count = count_records(cur)
         if count < 1:
             cur.execute("""INSERT INTO tbl_filecheck (col_datetime) VALUES (?)""",('Never'))
@@ -107,10 +107,11 @@ def last_datetime(self):
     conn = sqlite3.connect('db_filecheck.db')
     with conn:
         cur = conn.cursor()
-        count = ""
-        last_column = cur.execute("""SELECT * FROM tbl_filecheck ORDER BY ID DESC LIMIT 1""")
+        #count = ""
+        cur.execute("""SELECT col_datetime FROM tbl_filecheck ORDER BY col_datetime DESC LIMIT 1""")
         last_fc = cur.fetchone()[0]
-        self.last_fc.set(str(last_column))
+        print(last_fc)
+        self.last_fc.set(last_fc)
     conn.close()
 
 #=========================================================
