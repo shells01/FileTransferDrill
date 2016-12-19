@@ -86,9 +86,20 @@ def first_run(self):
         cur = conn.cursor()
         #count = count_records(cur)
         cur, count = count_records(cur)
+        now = dt.datetime.now()
         if count < 1:
             cur.execute("""INSERT INTO tbl_filecheck (col_datetime) VALUES (?)""",('Never'))
             conn.commit()
+    conn.close()
+
+def insert_datetime(self):
+    conn = sqlite3.connect('db_filecheck.db')
+    with conn:
+        cur = conn.cursor()
+        cur, count = count_records(cur)
+        datetime = str(dt.datetime.now())
+        cur.execute("""INSERT INTO tbl_filecheck (col_datetime) VALUES (?)""", (datetime,))
+        conn.commit()
     conn.close()
 
 # Retrieve date/time of most recent filecheck
