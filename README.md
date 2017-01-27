@@ -7,7 +7,17 @@ This is a repository for my Python drills.
 
 <b>Task:</b> Create code that will use the current time of the Portland HQ to find out the time in the NYC & London branches, then compare that time with the branches' hours to see if they are open or closed. 
 Print out if each of the branches are open or closed.
-- Use Datetime module
-- Use Python 2.7
+- Datetime module
+- Python 2.7
 
+<b>File Mover Drill</b> (file_mover.py)
 
+<b>Scenario:</b> Your employer wants a program to move all his .txt files
+from folder A to folder B with one click.
+Create 2 folders on your desktops: Folder A and Folder B
+Create 4 random .txt files & put them in Folder A.
+
+<b>Task:</b>
+-Move the files from Folder A to Folder B
+-Print out each file path that got moved to Folder B
+-Python 2.7
