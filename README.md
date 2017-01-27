@@ -1,7 +1,7 @@
 # python
 This is a repository for my Python drills. 
 
-<b>Datetime Drill</b> (datetime_drill.py)
+<b>1. Datetime Drill</b> (datetime_drill.py)
 
 <b>Scenario:</b> A company has opened 2 new branches, one in New York City, and the other in London. They need a simple program to find out if the branches are open or closed based on the current time of the Headquarters here in Portland. The hours of both branches 9:00 am - 9:00 pm in their own time zones.
 
@@ -10,7 +10,7 @@ Print out if each of the branches are open or closed.
 - Datetime module
 - Python 2.7
 
-<b>File Mover Drill</b> (file_mover.py)
+<b>2. File Mover Drill</b> (file_mover.py)
 
 <b>Scenario:</b> Your employer wants a program to move all his .txt files from folder A to folder B with one click.
 Create 2 folders on your desktops: Folder A and Folder B. Create 4 random .txt files & put them in Folder A.
@@ -20,7 +20,7 @@ Create 2 folders on your desktops: Folder A and Folder B. Create 4 random .txt f
 - Print out each file path that got moved to Folder B
 - Python 2.7
 
-<b>Daily Filetransfer Drill</b> (daily_filetransfer.py)
+<b>3. Daily Filetransfer Drill</b> (daily_filetransfer.py)
 
 <b>Scenario:</b> Your company's users create or edit a collection of text files throughout the day.
 Once a day, files that are new, or edited within 24 hours, are sent to a destination folder on the computer, then sent to the home office.
@@ -28,3 +28,7 @@ Once a day, files that are new, or edited within 24 hours, are sent to a destina
 <b>Task</b>
 - Create 2 folders, 1 for the source files & 1 to be the destination folder.
 - Create a script that will automate this daily file transfer process. 
+
+<b>4. GUI Filetransfer Drill</b>
+
+<b>5. GUI Filetransfer with SQLite</b>
