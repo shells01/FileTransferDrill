@@ -21,6 +21,7 @@ Create 2 folders on your desktops: Folder A and Folder B. Create 4 random .txt f
 -Python 2.7
 
 <b>Daily Filetransfer Drill</b> (daily_filetransfer.py)
+
 <b>Scenario:</b> Your company's users create or edit a collection of text files throughout the day.
 Once a day, files that are new, or edited within 24 hours, are sent to a destination folder on the computer, then sent to the home office.
 
