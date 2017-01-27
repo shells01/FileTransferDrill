@@ -16,9 +16,9 @@ Print out if each of the branches are open or closed.
 Create 2 folders on your desktops: Folder A and Folder B. Create 4 random .txt files & put them in Folder A.
 
 <b>Task:</b>
--Move the files from Folder A to Folder B
--Print out each file path that got moved to Folder B
--Python 2.7
+ -Move the files from Folder A to Folder B
+- Print out each file path that got moved to Folder B
+- Python 2.7
 
 <b>Daily Filetransfer Drill</b> (daily_filetransfer.py)
 
