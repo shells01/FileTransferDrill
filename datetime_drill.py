@@ -3,11 +3,21 @@
 # Datetime Drill
 # Python 2.7
 # Tested on Windows 7
-"""The company you work for just opened 2 branches.
+"""
+Scenario:
+The company you work for just opened 2 branches.
 One is in NYC, the other is in London.
 They need a program to find out if the branches are open based on the
 current time of the Headquarters here in Portland.
-The hours of both branches are 9 am - 9 pm in their own time zone."""
+The hours of both branches are 9 am - 9 pm in their own time zone.
+
+Task:
+Create code that will use current time of the Portland HQ
+to find out the time in NYC & London branches,
+then compare the time with the branches' hours to see if they are open.
+
+Print out if each of the 2 branches are open or closed.
+"""
 
 import datetime
 from datetime import timedelta
